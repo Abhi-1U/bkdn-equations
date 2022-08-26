@@ -2,75 +2,36 @@ Pandoc
   Meta
     { unMeta =
         fromList
-          [ ( "author" , MetaInlines [ Str "Nullus" ] )
-          , ( "subtitle"
-            , MetaInlines [ Str "Lorem" , Space , Str "ipsum" ]
+          [ ( "author" , MetaList [ MetaInlines [ Str "Abhi-1U" ] ] )
+          , ( "title"
+            , MetaInlines
+                [ Str "Using"
+                , Space
+                , Str "bookdown"
+                , Space
+                , Str "equations"
+                , Space
+                , Str "Lua"
+                , Space
+                , Str "filter"
+                ]
             )
-          , ( "title" , MetaInlines [ Str "Greetings!" ] )
           ]
     }
   [ Para
-      [ Str "Hello"
-      , Space
-      , Str "from"
-      , Space
-      , Str "the"
-      , Space
-      , Str "Lua"
-      , Space
-      , Str "filter!"
-      ]
-  , Para
-      [ Str "Lorem"
-      , Space
-      , Str "ipsum"
-      , Space
-      , Str "dolor"
-      , Space
-      , Str "sit"
-      , Space
-      , Str "amet,"
-      , Space
-      , Str "consectetuer"
-      , Space
-      , Str "adipiscing"
-      , Space
-      , Str "elit."
-      , Space
-      , Str "Donec"
+      [ Math
+          DisplayMath "\\label{eq:emc.2}\n    e = m c^2 (\\#eq:emc-2)"
       , SoftBreak
-      , Str "hendrerit"
+      , Str "This"
       , Space
-      , Str "tempor"
+      , Str "is"
       , Space
-      , Str "tellus."
+      , Str "a"
       , Space
-      , Str "Donec"
+      , Str "new"
       , Space
-      , Str "pretium"
+      , Str "equation"
       , Space
-      , Str "posuere"
-      , Space
-      , Str "tellus."
-      , Space
-      , Str "Proin"
-      , Space
-      , Str "quam"
-      , SoftBreak
-      , Str "nisl,"
-      , Space
-      , Str "tincidunt"
-      , Space
-      , Str "et,"
-      , Space
-      , Str "mattis"
-      , Space
-      , Str "eget,"
-      , Space
-      , Str "convallis"
-      , Space
-      , Str "nec,"
-      , Space
-      , Str "purus."
+      , RawInline (Format "markdown") "\\@ref(eq:emc-2)"
       ]
   ]
