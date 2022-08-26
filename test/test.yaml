@@ -1,5 +1,5 @@
 input-files: ["test/input.tex"]
-to: [native,markdown]
+to: native
 standalone: true
 filters:
   - {type: lua, path: bookdown-equations.lua}
