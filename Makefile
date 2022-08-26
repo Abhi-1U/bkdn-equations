@@ -55,7 +55,7 @@ _site/index.html: README.md test/input.tex $(FILTER_FILE) .tools/docs.lua \
 	$(PANDOC) \
 	    --standalone \
 	    --lua-filter=.tools/docs.lua \
-	    --metadata=sample-file:test/input.md \
+	    --metadata=sample-file:test/input.tex \
 	    --metadata=result-file:_site/output.md \
 	    --metadata=code-file:$(FILTER_FILE) \
 	    --css=style.css \
