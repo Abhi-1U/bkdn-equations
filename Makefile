@@ -30,7 +30,7 @@ USER_NAME = $(shell git config user.name)
 #
 # The automatic variable `$<` refers to the first dependency
 # (i.e., the filter file).
-test: $(FILTER_FILE) test/input.md test/test.yaml
+test: $(FILTER_FILE) test/input.tex test/test.yaml
 	$(PANDOC) --defaults test/test.yaml | \
 		$(DIFF) test/expected.native -
 
@@ -49,7 +49,7 @@ test/expected.native: $(FILTER_FILE) test/input.md test/test.yaml
 .PHONY: website
 website: _site/index.html _site/$(FILTER_FILE)
 
-_site/index.html: README.md test/input.md $(FILTER_FILE) .tools/docs.lua \
+_site/index.html: README.md test/input.tex $(FILTER_FILE) .tools/docs.lua \
 		_site/output.md _site/style.css
 	@mkdir -p _site
 	$(PANDOC) \
@@ -68,7 +68,7 @@ _site/style.css:
 	    --output $@ \
 	    'https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css'
 
-_site/output.md: $(FILTER_FILE) test/input.md test/test.yaml
+_site/output.md: $(FILTER_FILE) test/input.tex test/test.yaml
 	@mkdir -p _site
 	$(PANDOC) \
 	    --defaults=test/test.yaml \
