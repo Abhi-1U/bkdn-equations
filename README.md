@@ -10,10 +10,10 @@ bookdown-equations, Convert LaTeX equation labels to bookdown compatible labels
 bookdown-equations, is a Pandoc Lua filter for Converting LaTeX equation labels to [Bookdown Style equation labels](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html) in MathJax environment.
 This filter also updates the equation references to [bookdown style references](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html).
 
-[pages badge]: https://img.shields.io/github/actions/workflow/status/Abhi-1U/bookdown-equations/website.yml?branch=master&label=pages&style=for-the-badge
-[pages workflow]: https://github.com/Abhi-1U/bookdown-equations/blob/main/.github/workflows/website.yaml
-[CI badge]: https://img.shields.io/github/actions/workflow/status/Abhi-1U/bookdown-equations/ci.yaml?branch=master&label=build&style=for-the-badge
-[CI workflow]: https://github.com/Abhi-1U/bookdown-equations/actions/workflows/ci.yml
+[pages badge]: https://img.shields.io/github/actions/workflow/status/Abhi-1U/bookdown-equations/website.yml?branch=main&label=pages&style=for-the-badge
+[pages workflow]: https://github.com/Abhi-1U/bookdown-equations/blob/main/.github/workflows/website.yml
+[CI badge]: https://img.shields.io/github/actions/workflow/status/Abhi-1U/bookdown-equations/ci.yaml?branch=main&label=build&style=for-the-badge
+[CI workflow]: https://github.com/actions/workflow/status/Abhi-1U/bookdown-equations/ci.yaml
 [pandoc]: https://pandoc.org/index.html
 [Pandoc badge]: https://img.shields.io/badge/pandoc-2.9+-red?style=for-the-badge&logo=haskell
 [Lua Filter]: https://img.shields.io/badge/lua-filter-darkblue?style=for-the-badge&logo=lua
